@@ -5,7 +5,7 @@ import pandas as pd
 from src.data_cleaning import (
     DataCleaning,
     DataDivideStrategy,
-    DataPreprocessStrategy,
+    DataPreProcessStrategy,
 )
 from typing_extensions import Annotated
 
@@ -28,7 +28,7 @@ def clean_data(
         data: pd.DataFrame
     """
     try:
-        preprocess_strategy = DataPreprocessStrategy()
+        preprocess_strategy = DataPreProcessStrategy()
         data_cleaning = DataCleaning(data, preprocess_strategy)
         preprocessed_data = data_cleaning.handle_data()
 

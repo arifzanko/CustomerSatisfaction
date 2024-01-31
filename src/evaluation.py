@@ -40,7 +40,7 @@ class R2Score(Evaluation):
     """
     Evaluation strategy that uses R2 Score
     """
-    def calculate_score(self, y_true: np.ndarray, y_pred: np.ndarray) -> float:
+    def calculate_scores(self, y_true: np.ndarray, y_pred: np.ndarray) -> float:
         """
         Args:
             y_true: np.ndarray
@@ -65,7 +65,7 @@ class RMSE(Evaluation):
     """
     Evaluation strategy that uses Root Mean Squared Error (RMSE)
     """
-    def calculate_score(self, y_true: np.ndarray, y_pred: np.ndarray) -> float:
+    def calculate_scores(self, y_true: np.ndarray, y_pred: np.ndarray) -> float:
         """
         Args:
             y_true: np.ndarray

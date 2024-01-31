@@ -13,6 +13,7 @@ def evaluate_model(model: RegressorMixin,
                    ) -> Tuple[
                        Annotated[float, "r2_score"],
                        Annotated[float, "rmse"],
+                       Annotated[float, "mse"]
                    ]:
     """
     Evaluates the model on the ingested data.
